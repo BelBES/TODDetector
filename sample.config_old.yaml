@@ -1,0 +1,34 @@
+%YAML:1.0
+# TODParameters
+TODParameters:
+   # GuessParameters
+   GuessParameters:
+      min_cluster_size: 20
+      min_inliers_count: 10
+      ransac_iterations_count: 400
+      max_projection_error: 10.
+      descriptor_distance_threshold: 0.03
+      min_stddev_factor: -107374176.
+   # FeatureExtractionParams
+   feature_extraction_params:
+      detector_type: SURF
+      extractor_type: multi-scale
+      descriptor_type: SURF
+      detector_params:
+         max_features: 4000
+         min_features: 500.
+         scale_factor: 1.
+         threshold: 200.
+         octaves: 1.
+      extractor_params:
+         octaves: 1.
+         scale_factor: 1.
+   # MatcherParameters
+   MatcherParameters:
+      matcher_type: BF
+      ratio_threshold: 8.9999997615814209e-001
+      knn: 2
+      do_ratio_test: 1
+   # ClusterParameters
+   ClusterParameters:
+      max_distance: 400
